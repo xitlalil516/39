@@ -1,0 +1,11 @@
+led.enable(false)
+basic.forever(function () {
+    pins.analogWritePin(AnalogPin.P0, 800)
+    pins.digitalWritePin(DigitalPin.P1, 1)
+    pins.digitalWritePin(DigitalPin.P2, 0)
+    basic.pause(1000)
+    pins.analogWritePin(AnalogPin.P0, 800)
+    pins.digitalWritePin(DigitalPin.P1, 1)
+    pins.digitalWritePin(DigitalPin.P2, 0)
+    basic.pause(1000)
+})
